@@ -1,0 +1,326 @@
+/* SZABIST Background Image with Lower Transparency */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("../public/78198835-2eaf-465c-b4b4-b20c1ed79704.jpeg")
+    no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(252, 253, 255, 0.5); /* Reduced transparency */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* App Container */
+.App {
+  text-align: center;
+}
+
+/* Login Container */
+.login-container {
+  background: #011a30; /* Dark navy blue */
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+  max-width: 400px; /* Compact width */
+  width: 100%;
+  animation: fade-in 1.5s ease-in-out;
+  color: #ffffff; /* White text inside container */
+}
+
+/* Fade-in Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Campus Image */
+.campus-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 3px solid #ffd700; /* Gold border */
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  color: #ffd700; /* Gold for headings */
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #f0ebeb; /* Softer gray for secondary text */
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Buttons */
+button {
+  background-color: #ffd700; /* Gold button */
+  color: #1e1e2f; /* Navy text for contrast */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px; /* Rounded buttons */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+button:hover {
+  background-color: #e6c200; /* Slightly darker gold on hover */
+  transform: scale(1.05); /* Interactive scaling effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+}
+.mb {
+  margin-bottom: 10px;
+}
+.mbn {
+  margin-bottom: 0px;
+  color: #f5f3f3;
+}
+/* Status Message */
+.status-message {
+  background-color: #ffd700; /* Gold background */
+  color: #1e1e2f; /* Navy text */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  animation: pop-in 1s ease;
+}
+
+/* Pop-in Animation */
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 12px 0 8px;
+  font-size: 1.1em;
+  color: #ffffff; /* White text for labels */
+}
+
+/* Inputs and Selects */
+input,
+select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 7px;
+  border: none;
+  border-radius: 8px;
+  background: #3c4b4b; /* Dark gray input background */
+  color: #ffffff; /* White text */
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #a9a9a9; /* Subtle placeholder color */
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #ffd700; /* Gold glow on focus */
+  background: #3a3a55; /* Slightly lighter background */
+}
+
+select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Dropdown Hover Effect */
+select:hover {
+  background-color: #3a3a55; /* Slight hover effect */
+}
+
+/* Dropdown Arrow */
+select::-ms-expand {
+  display: none; /* Hide default dropdown arrow */
+}
+
+/* Interactive Select Options */
+select option {
+  background: #2a2a40; /* Consistent dropdown background */
+  color: #ffffff; /* White text */
+}
+
+/* Interactive Effects */
+button:active {
+  transform: scale(1.02); /* Slight press effect */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+}
+
+input:hover,
+select:hover {
+  background: #3a3a55; /* Subtle hover effect */
+}
+/* Facial Recognition Box */
+.facial-recognition-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%; /* Ensure it does not overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Webcam Container */
+.webcam-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Set a fixed width to prevent overflow */
+  max-height: 250px; /* Set a fixed height */
+  overflow: hidden; /* Prevents spilling outside */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.webcam {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures it stays within the frame */
+}
+/* Chatbox Styling */
+.chat-container {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  max-width: 900 px;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 20px auto;
+  text-align: center;
+}
+.height100 {
+  height: 100vh;
+}
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3f3f3f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+.chatbox {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid #c5b86e;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.chat-message {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.user-message {
+  background-color: #525298;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.bot-message {
+  background-color: #ffd700;
+  padding: 8px;
+  border-radius: 8px;
+  color: #1e1e2f;
+}
+
+/* Chat Input */
+.chat-container form {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-container input {
+  flex-grow: 1;
+  height: 30px;
+  padding: 10px;
+  border-radius: 18px;
+  border: none;
+}
+
+.chat-container button {
+  background-color: #ffd700;
+  color: #1e1e2f;
+  border: none;
+  max-height: 50px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
